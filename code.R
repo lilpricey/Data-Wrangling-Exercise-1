@@ -48,3 +48,6 @@ toys <- mutate(toys, product_smartphone = ifelse(product_code == "p", 1, 0))
 toys <- mutate(toys, product_tv = ifelse(product_code == "v", 1, 0))
 toys <- mutate(toys, product_laptop = ifelse(product_code == "x", 1, 0))
 toys <- mutate(toys, product_tablet = ifelse(product_code == "q", 1, 0))
+
+#save new csv file
+export(toys, "refine_clean.csv")
